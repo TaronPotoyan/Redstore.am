@@ -69,7 +69,7 @@ function Header() {
                         }}>Log out</button>
                     </>
                 ) : (
-                    <Link to="/login" id="Log-in">Log-in</Link>
+                    <Link to="/login" id="Log-in">Մուտք գործել</Link>
                 )}
             </div>
          

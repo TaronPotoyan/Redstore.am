@@ -30,6 +30,7 @@ ul {
 }
 
 li a {
+    font-size: 18px;
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -70,7 +71,7 @@ li a:hover {
 
 #Log-in {
     color: #f31414;
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: none;
 }
 
