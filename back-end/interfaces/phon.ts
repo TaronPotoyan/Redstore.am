@@ -5,7 +5,7 @@ export interface IPhon extends IProduct {
     brand : string;
     RAM : string;
     SSD : string;
-    Proccessor : string;
+    Processor : string;
     CameraFront : string;
     CameraBack : string;
 }

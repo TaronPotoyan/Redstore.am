@@ -30,7 +30,7 @@ async function PostPhons(req: Request, res: Response): Promise<void> {
         model,
         RAM,
         SSD,
-        Proccessor,
+        Processor,
         CameraFront,
         CameraBack
       } = req.body;
@@ -42,7 +42,7 @@ async function PostPhons(req: Request, res: Response): Promise<void> {
         model,
         RAM,
         SSD,
-        Proccessor,
+        Processor,
         CameraFront,
         CameraBack,
         count,

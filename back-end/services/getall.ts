@@ -17,3 +17,5 @@ async function GetAll(req : Request , res : Response) : Promise<void> {
 export default {
     GetAll,
 }
+
+

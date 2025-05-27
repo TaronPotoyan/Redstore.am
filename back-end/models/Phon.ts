@@ -31,15 +31,31 @@ const PhoneSchema: Schema<IPhon> = new Schema(
       type: String,
       required: true,
     },
-    SSD : {
+    SSD: {
       type: String,
       required: true,
     },
-    img : {
+    img: {
       type: String,
-      default : null,
+      default: null,
+    },
+    RAM: {
+      type: String,
+      required: true,
+    },
+    CameraFront: {
+      type: String,
+      required: true,
+    },
+    CameraBack: {
+      type: String,
+      required: true,
+    },
+    Processor: {
+      type: String,
+      required: true,
     }
-  },
+  }
 );
 
 const Phone = mongoose.model<IPhon>('Phone', PhoneSchema);

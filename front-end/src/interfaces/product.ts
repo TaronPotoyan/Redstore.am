@@ -1,4 +1,4 @@
-export interface IProduct extends Document {
+export default interface IProduct extends Document {
     _id : any,
     count: number;
     cost: number;
@@ -7,6 +7,10 @@ export interface IProduct extends Document {
     productionDate: Date;
     model : string,
     img : string
-  }
+}
   
+
+
+
+
   

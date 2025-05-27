@@ -1,0 +1,43 @@
+.categories {
+     color: black;
+     font-family: Arial, sans-serif;
+     padding: 5rem;
+     
+}
+
+.categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.categories li {
+  font-size: 2.1rem;
+}
+
+
+.categories a {
+    width: 245px;       
+    line-height: 50px;  
+    text-align: center; 
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(212, 213, 214);
+    padding: 12px;
+    border-radius: 14px;
+    box-shadow: 2px 2px 5px rgba(155, 154, 154, 0.7);
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.categories a:hover {
+  transform: translateY(-7px);
+  box-shadow: 4px 4px 10px rgba(184, 184, 184, 0.8);
+  text-decoration: none;
+}
+

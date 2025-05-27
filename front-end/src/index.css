@@ -1,1 +1,8 @@
-@import './stylesheets/product.css'
+@import './stylesheets/product.css';
+@import url('./stylesheets/header.css');
+@import url('./stylesheets//login.css');
+@import url('./stylesheets/categories.css');
+
+* {
+    margin: 0px;
+}
