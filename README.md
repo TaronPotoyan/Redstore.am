@@ -72,7 +72,8 @@ The project showcases product listing, detailed views, user authentication, shop
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/redsotre.am.git
-cd redsotre.am
+git clone https://github.com/TaronPotoyan/Redstore.am.git
+cd Redsotre_Clone.am
+
 
 
