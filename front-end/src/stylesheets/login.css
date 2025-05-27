@@ -52,9 +52,8 @@
 }
 
 .container-login button:hover {
-  background-color: #ff2d3f;
+  
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(255, 71, 87, 0.3);
 }
 
 .container-login button:active {
@@ -82,8 +81,8 @@
 }
 
 .toggle-password {
-  width: 180px;
-  height: 40px;
+  width: 200px !important;
+  height: 43px !important;
   background-color: blue;
   color: #f0ebeb;
   font-size: 19px;
@@ -101,8 +100,10 @@
   margin-top: 0;
 }
 
+
 .toggle-password:hover {
+  
   transform: translateY(-0.2em);
-  background-color: #00008b; 
 }
+
 

@@ -1,7 +1,7 @@
 import  {IProduct} from '../interfaces/product';
 
 
-interface Client {
+interface User {
     name : string;
     email ?: string;
     password : string;
@@ -9,4 +9,4 @@ interface Client {
 }
 
 
-export default Client;
+export default User;

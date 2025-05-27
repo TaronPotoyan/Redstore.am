@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../components/header';
+
 export default function Login() {
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
@@ -9,33 +11,40 @@ export default function Login() {
     setShowPassword(!showPassword);
   };
 
+
+
   return (
-    
-    <div className="container-login">
-      <input
-      className='input'
-        type="text"
-        placeholder="Անուն..."
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      
+    <>
+      <Header/>
+      <div className="container-login">
         <input
-          className='input'
-          type={showPassword ? "text" : "password"}
-          placeholder="Գաղտնաբառ..."
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
+        className='input'
+          type="text"
+          placeholder="Անուն..."
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
-        <button 
-          type="button"
-          className="toggle-password"
-          onClick={togglePasswordVisibility}
-        >
-          {showPassword ? 'Hide' : 'Show'}
-        </button>
-         <Link to=''id="regbtn"> Register</Link>
-    </div>
+        
+          <input
+            className='input'
+            type={showPassword ? "text" : "password"}
+            placeholder="Գաղտնաբառ..."
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button 
+            type="button"
+            className="toggle-password"
+            onClick={togglePasswordVisibility}
+          >
+            {showPassword ? '👁️' : '🙈' }
+          </button>
+          <Link 
+          to='/registration'
+          id="regbtn"   
+          > Գրանցվել</Link>
+      </div>
+    </>
   );
 
 }
