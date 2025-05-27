@@ -54,5 +54,25 @@ The project showcases product listing, detailed views, user authentication, shop
 
 ---
 
-## Project Structure
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- MongoDB (local installation or MongoDB Atlas cloud instance)
+- npm or yarn package manager
+
+---
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/redsotre.am.git
+cd redsotre.am
+
 
