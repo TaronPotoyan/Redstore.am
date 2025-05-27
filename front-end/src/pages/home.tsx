@@ -4,6 +4,8 @@ import api from '../services/api';
 import type IProduct from '../interfaces/product';
 import Product from '../components/product';
 
+
+
 function Home() {
   const [products, setProducts] = useState<IProduct[] | null>(null);
   const [message, setMessage] = useState('');
@@ -16,13 +18,13 @@ function Home() {
       })
       .catch(e => {
         console.error(e);
-        setMessage('Failed to load products');
+        setMessage('Չհաջողվեց բեռնել ապրանքները');
       });
   }, []);
 
   return (
     <>
-      <Header />
+      <Header/>
       {message && (
         <span style={{
           display: 'flex',
@@ -31,7 +33,6 @@ function Home() {
           textAlign: 'center',
           justifyContent: 'center',
           fontSize: '20px',
-          backgroundColor: 'black',
           padding: '10px',
           margin: '10px 0',
         }}>

@@ -3,6 +3,7 @@ import Home from './pages/home';
 import Login from './pages/Login';
 import Categories from './pages/categories';
 import Smartphones from './pages/smartphone';
+import Tablets from './pages/Tablets';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/login' element={<Login/>} />
         <Route path='/categories' element={<Categories/>} />
         <Route path='/phons' element={<Smartphones/>} />
+        <Route path='/Tablets' element={<Tablets/>} />
       </Routes>
     </Router>
   );

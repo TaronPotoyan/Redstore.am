@@ -2,41 +2,39 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
-  padding: 40px 20px;
-  background-color: #fafafa;
+  gap: 32px;
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, #fff, #f3f3f3);
 }
 
 .product-card {
   background-color: #ffffff;
-  border-radius: 16px;
-  width: 260px;
-  min-height: 370px;
+  border-radius: 20px;
+  width: 280px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  border: 1px solid #eaeaea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
 }
 
 .product-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
 }
 
 .product-card img {
   width: 100%;
-  height: 100%;
+  height: 220px;
   object-fit: cover;
-  padding-top: 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .product-content {
-  padding: 16px;
-  flex-grow: 1;
+  padding: 18px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -44,41 +42,42 @@
 }
 
 .product-model {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin-bottom: 10px;
   font-weight: 600;
-  color: #333;
+  color: #222;
   text-align: center;
 }
 
 .product-price {
   color: #e60023;
-  font-weight: bold;
-  font-size: 1.3rem;
-  margin: 12px 0;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 10px 0 20px;
 }
 
 .by-product {
   background: linear-gradient(135deg, #e60023, #c4001d);
   color: white;
   border: none;
-  padding: 12px 20px;
-  border-radius: 25px;
+  padding: 12px 24px;
+  border-radius: 20px;
   cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
-  width: 80%;
-  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(230, 0, 35, 0.3);
+  width: 200px;
 }
 
 .by-product:hover {
   background: linear-gradient(135deg, #c4001d, #a00019);
-  transform: scale(1.03);
+  transform: translateY(-2px) scale(1.02);
 }
 
 .loading {
   font-size: 1.5rem;
   text-align: center;
-  padding: 50px;
-  color: #888;
+  padding: 60px;
+  color: #777;
 }

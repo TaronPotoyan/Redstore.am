@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from "../components/header";
 
+
 type Category = 'Սմարթֆոններ' | 'Պլանշետներ' | 'Նոթբուքներ' | 'Հեռուստացույց';
 
 const categories: Category[] = ['Սմարթֆոններ', 'Պլանշետներ', 'Նոթբուքներ', 'Հեռուստացույց'];
@@ -20,9 +21,12 @@ const emojis: Record<Category, string> = {
 };
 
 function Categories() {
+
+
+
     return (
         <>
-            <Header />
+            <Header  />
             <div className="categories">
                 <ul>
                     {categories.map((i, k) => (

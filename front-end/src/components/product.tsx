@@ -19,10 +19,10 @@ export default function Product({
   const handlerBasket = (): void => {
     if (!user.current) {
       navigate('/');
-      setMessage('Խնդրում եմ գրանցվեք կամ մուտք գործեք զամբյուղը օգտագործելու համար։');
+      setMessage('Ձեր զամբյուղը հասանելի կլինի մուտքագրումից կամ գրանցումից հետո:');
       setTimeout(() => {
         setMessage('');
-      }, 2000);
+      }, 3000);
       return;
     }
     navigate('/basket');

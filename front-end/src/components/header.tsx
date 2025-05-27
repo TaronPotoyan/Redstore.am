@@ -1,8 +1,10 @@
 import { useState , useEffect } from "react";
 import { Link } from "react-router-dom";
 
+
 function Header() {
     const [scrolled, setScrolled] = useState(false);
+
     const [user, setUser] = useState(() => {
         try {
             const userString = localStorage.getItem('user');
@@ -70,6 +72,7 @@ function Header() {
                     <Link to="/login" id="Log-in">Log-in</Link>
                 )}
             </div>
+         
         </header>
     );
 }
