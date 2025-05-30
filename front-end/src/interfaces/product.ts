@@ -5,12 +5,8 @@ export default interface IProduct extends Document {
     likeCount: number;
     dislikeCount: number;
     productionDate: Date;
-    model : string,
-    img : string
+    model : string;
+    img : string;
+    type ?: string;
 }
-  
-
-
-
-
   

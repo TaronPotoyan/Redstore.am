@@ -8,6 +8,7 @@ export default function Product({
   cost,
   model,
   setMessage,
+  type,
 }: IProduct & { message: string; setMessage: (msg: string) => void }) {
   const navigate = useNavigate();
   const user = useRef<string>('');
@@ -31,7 +32,11 @@ export default function Product({
   return (
     <div className="product-card">
       {img ? (
-        <Link to={`/products/${_id}`}>
+        <Link to={ {
+                    pathname : `/products/${_id}`
+                }}
+              state ={{type}}  
+        >
           <img src={img} alt={model} />
         </Link>
       ) : null}

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "../components/header";
-
+import Footer from "../components/footer";
 
 type Category = 'Սմարթֆոններ' | 'Պլանշետներ' | 'Նոթբուքներ' | 'Հեռուստացույց';
 
@@ -38,6 +38,7 @@ function Categories() {
                     ))}
                 </ul>
             </div>
+            <Footer is ={false}/>
         </>
     );
 }

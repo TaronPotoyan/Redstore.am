@@ -5,4 +5,7 @@ const rout_all = express.Router();
 
 rout_all.get('/',GetAllProducts);
 
+
+
+
 export default rout_all;

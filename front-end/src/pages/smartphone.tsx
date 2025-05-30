@@ -2,12 +2,12 @@ import { useEffect, useState, useMemo } from "react";
 import Header from "../components/header";
 import type IProduct from '../interfaces/product';
 import Product from "../components/product";
-
+import Footer from "../components/footer";
 
 function Smartphones() {
   const [phons, setPhons] = useState<IProduct[] | null>(null);
   const [message, setMessage] = useState('');
-
+  const type = 'phone';
 
   useEffect(() => {
     fetch('http://localhost:3000/phons')
@@ -38,6 +38,7 @@ function Smartphones() {
                 {...product}
                 message={message}
                 setMessage={setMessage}
+                type = {type}
             />
         ))}
 
@@ -47,6 +48,7 @@ function Smartphones() {
           {phons === null ? 'Loading...' : 'No available products'}
         </h2>
       )}
+      <Footer is={!!phons}/>
     </>
   );
 }

@@ -3,18 +3,20 @@ import Header from '../components/header';
 import api from '../services/api';
 import type IProduct from '../interfaces/product';
 import Product from '../components/product';
-
+import Footer from '../components/footer'
 
 
 function Home() {
-  const [products, setProducts] = useState<IProduct[] | null>(null);
-  const [message, setMessage] = useState('');
-
+  const [products, setProducts] = useState<IProduct[] | null>(null) ;
+  const [message, setMessage] = useState('') ;
+  
   useEffect(() => {
+
     api.fetchProducts('http://localhost:3000/products')
       .then(data => {
         setProducts(data);
         console.log(data);
+        
       })
       .catch(e => {
         console.error(e);
@@ -55,6 +57,7 @@ function Home() {
           ))
         )}
       </div>
+      <Footer is={!!products}/>
     </>
   );
 }

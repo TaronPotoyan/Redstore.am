@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import Phone from '../models/Phon';
+import { data } from 'react-router-dom';
 
 async function GetPhons(req: Request, res: Response): Promise<void> {
 
@@ -66,7 +67,36 @@ async function PostPhons(req: Request, res: Response): Promise<void> {
     }
 }
 
+
+
+
+async function GetSpectial(req: Request, res: Response) {
+    try {
+        const { _id } = req.params;
+
+
+        const product = await Phone.findById(_id);
+
+        if (!product) {
+            console.log("Product not found:", product);
+            return res.status(404).json({ message: 'Ապրանքը չի գտնվել' });
+        }
+
+        console.log("Found product:", product);
+        res.status(200).json(product);
+
+    } catch (e) {
+        console.log(`Error : ${e}`);
+        res.status(500).json({ message: 'Ներքին սերվերի սխալ' });
+    }
+}
+
 export default {
     GetPhons,
     PostPhons,
+    GetSpectial
 }
+
+
+
+

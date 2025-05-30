@@ -8,4 +8,5 @@ export interface IPhon extends IProduct {
     Processor : string;
     CameraFront : string;
     CameraBack : string;
+    type : string
 }

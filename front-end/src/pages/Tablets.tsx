@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import Header from "../components/header"
 import Product from "../components/product"
 import type IProduct from "../interfaces/product"
+import Footer from "../components/footer"
+
 
 export default function Tablets() {
     const [tablets, setTablets] = useState<IProduct[] | null>(null)
@@ -38,8 +40,9 @@ export default function Tablets() {
                     justifyContent : 'center',
                     fontSize : '40px',
                     color : 'red'
-                }}>Պլանշետներ առկա չեն</p>
+                }}>Պլանշետներ առկա չեն</p>     
             }
+            <Footer is={!!tablets} />
         </>
     )
 }

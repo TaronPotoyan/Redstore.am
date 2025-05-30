@@ -54,6 +54,10 @@ const PhoneSchema: Schema<IPhon> = new Schema(
     Processor: {
       type: String,
       required: true,
+    },
+    type : {
+      type : String,
+      default : 'phon'
     }
   }
 );

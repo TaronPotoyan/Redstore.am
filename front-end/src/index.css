@@ -2,7 +2,7 @@
 @import url('./stylesheets/header.css');
 @import url('./stylesheets//login.css');
 @import url('./stylesheets/categories.css');
-
+@import url('./stylesheets//footer.css');
 * {
     margin: 0px;
 }
