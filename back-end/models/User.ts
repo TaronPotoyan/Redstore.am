@@ -18,7 +18,11 @@ const ClientSchema = new Schema({
   },
   basket: [{
     type: Schema.Types.ObjectId,
-  }]
+  }],
+  reset_id: {
+    type : String,
+    default : ''
+  }
 });
 
 const Client  = mongoose.model("Client", ClientSchema); 

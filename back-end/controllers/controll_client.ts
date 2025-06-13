@@ -10,7 +10,12 @@ async function  CreateCLient(req : Request , res : Response) {
         await client_obj.post(req,res);
 }
 
+async function ResetPAssword(req : Request,res : Response) {
+       await client_obj.newPassword(req,res);         
+}
+
 export default {
     Get_Client,
     CreateCLient,
+    ResetPAssword
 }

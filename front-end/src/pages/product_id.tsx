@@ -19,7 +19,7 @@ export default function  Sepctial_Product () {
         <>
             <Header />
             <div className="prd-Page">
-
+                
             </div>
         </>
     )

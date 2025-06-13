@@ -6,6 +6,7 @@ import Smartphones from './pages/smartphone';
 import Tablets from './pages/Tablets';
 import RegistrationPage from './pages/registeration';
 import Sepctial_Product from './pages/product_id';
+import Reset from './pages/RESET';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/Tablets' element={<Tablets/>} />
         <Route path='/registration' element={<RegistrationPage/>} />
         <Route path='/products/:_id' element={<Sepctial_Product/>} />
+        <Route path='/reset' element={<Reset/>}/>
       </Routes>
     </Router>
   );

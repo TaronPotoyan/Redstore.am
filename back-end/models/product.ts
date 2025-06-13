@@ -1,7 +1,7 @@
 import mongoose, { Schema } from 'mongoose';
 import { IPhon } from '../interfaces/phon';
 
-const PhoneSchema: Schema<IPhon> = new Schema(
+const Productschema: Schema<IPhon> = new Schema(
   {
     count: {
       type: Number,
@@ -21,7 +21,7 @@ const PhoneSchema: Schema<IPhon> = new Schema(
     },
     productionDate: {
       type: Date,
-      required: true,
+      required: false,
     },
     brand: {
       type: String,
@@ -33,7 +33,7 @@ const PhoneSchema: Schema<IPhon> = new Schema(
     },
     SSD: {
       type: String,
-      required: true,
+      required: false,
     },
     img: {
       type: String,
@@ -45,15 +45,15 @@ const PhoneSchema: Schema<IPhon> = new Schema(
     },
     CameraFront: {
       type: String,
-      required: true,
+      required: false,
     },
     CameraBack: {
       type: String,
-      required: true,
+      required: false,
     },
     Processor: {
       type: String,
-      required: true,
+      required: false,
     },
     type : {
       type : String,
@@ -62,5 +62,5 @@ const PhoneSchema: Schema<IPhon> = new Schema(
   }
 );
 
-const Phone = mongoose.model<IPhon>('Phone', PhoneSchema);
-export default Phone;
+const Product = mongoose.model<IPhon>('products', Productschema);
+export default Product;

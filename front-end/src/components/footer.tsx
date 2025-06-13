@@ -1,4 +1,6 @@
 export default function Footer ({ is }  : { is : boolean}) {
+    console.log(is);
+    
     return (
         <>
            <footer 

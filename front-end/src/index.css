@@ -3,6 +3,8 @@
 @import url('./stylesheets//login.css');
 @import url('./stylesheets/categories.css');
 @import url('./stylesheets//footer.css');
+@import url('./stylesheets/reset.css');
 * {
     margin: 0px;
+    box-sizing: border-box;
 }
