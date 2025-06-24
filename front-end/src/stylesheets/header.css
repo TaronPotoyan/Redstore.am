@@ -1,81 +1,115 @@
 header {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 10;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: rgb(7, 7, 7);
   align-items: center;
-  gap: 100px;
-  height: 100px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
+  gap: 80px;
+  height: 80px;
+  background-color: rgba(10, 10, 10, 0.98);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 0 2vw;
 }
 
 header.scrolled {
-  background: none;  
-  background-color: rgba(134, 134, 134, 0.932); 
-  backdrop-filter: blur(6px); 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(30, 30, 30, 0.92);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
 }
 
-
 ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
 }
 
 li a {
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-li a:hover {
-    color: #e00b0b;
-    text-decoration: underline;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: color 0.3s, background 0.3s;
 }
 
+li a:hover, li a:focus {
+  color: #fff;
+  background: linear-gradient(90deg, #e00b0b 60%, #ff3c3c 100%);
+  text-decoration: none;
+}
 
 .avatar {
-    width: 60px;   
-    height: 60px;
-    
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e00b0b;
+  box-shadow: 0 2px 8px rgba(224,11,11,0.10);
+  transition: border-color 0.3s;
 }
+
+.avatar:hover {
+  border-color: #fff;
+}
+
 .Search {
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    outline: none;
-    width: 50px;             
-    transition: all 0.7s ease;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  outline: none;
+  width: 50px;
+  background: #181818;
+  color: #fff;
+  transition: width 0.5s, border-color 0.3s, background 0.3s;
 }
 
 .Search:hover,
 .Search:focus {
-    width: 250px;            
-    border-color: #dd0d0d;    
-}
-
-.avatar {
-    width: 70px;
-    height: 70px;
-    border-radius: 70px;
+  width: 220px;
+  border-color: #e00b0b;
+  background: #232323;
 }
 
 #Log-in {
-    color: #f31414;
-    font-size: 20px;
-    text-decoration: none;
+  color: #e00b0b;
+  font-size: 19px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: 1.5px solid transparent;
+  transition: color 0.3s, border-color 0.3s, background 0.3s;
 }
 
-#Log-in:hover{
-    text-decoration: none;
-    color: #dd0d0d;
+#Log-in:hover, #Log-in:focus {
+  color: #fff;
+  background: linear-gradient(90deg, #e00b0b 60%, #ff3c3c 100%);
+  border-color: #e00b0b;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  header {
+    gap: 30px;
+    height: 64px;
+    padding: 0 1vw;
+  }
+  ul {
+    gap: 16px;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .Search {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
 }

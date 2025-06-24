@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import Product from '../models/product';
+import type { IProduct } from '@interfaces/product';
 
 async function GetPhons(req: Request, res: Response): Promise<void> {
 
@@ -35,8 +36,6 @@ async function PostPhons(req: Request, res: Response): Promise<void> {
       CameraFront,
       CameraBack
     } = req.body;
-
-  
 
     const new_phon = {
       img,

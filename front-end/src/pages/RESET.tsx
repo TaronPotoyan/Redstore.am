@@ -99,23 +99,6 @@ export default function Reset() {
                 required
             />
             </label>
-
-            <label htmlFor="keyInput">
-            Գաղտնագիր 
-            <input
-                type="text"
-                id="keyInput"
-                name="keyInput"
-                placeholder="Մուտքագրեք ձեր ստացած գաղտնագիրը"
-                value={key}
-                onChange={(e) => {
-                setKey(e.target.value);
-                setMessage('');
-                }}
-                required
-            />
-            </label>
-
             <button type="submit">Վերակայել</button>
         </form>
         </div>

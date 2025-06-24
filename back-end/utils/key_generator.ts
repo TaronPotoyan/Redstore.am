@@ -7,8 +7,6 @@ function generateKey(length: number = 16): string {
     return key;
 }
 
-
-
 export default {
     generateKey
 }
